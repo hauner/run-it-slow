@@ -1,0 +1,37 @@
+$LastChangedDate:$
+
+slow, a cpu limiting process runner
+===================================
+
+For a long running build (like building Qt) it is annoying when the fan goes up
+to 6000 rpm after a couple of seconds and keeps there for an hour.
+
+I like to have a small tool that limits the cpu usage of a process and its child
+processes to less than 100% to keep the fan running with low 2000 to 3000 rpm.
+
+I didn't find any tool that did work for me on MacOSX (Snow Leopard).
+
+Allthough it is a tool with a purpose it is a learning project for Objective-C
+(based on foundation framework), test driven development (with OCUnit, OCMock)
+and cucumber.
+
+
+Usage
+=====
+
+Note: -p is not yet implemented, the cpu percetange is hardcoded as 50%.
+
+
+slow is called like this:
+
+slow "command"
+slow -p 10 "command"
+
+The -p option tells slow the allowed cpu usage percentage, ie. -p 10 will allow
+"command" to use up to 10 percent of the available cpu power.
+
+"command" has to be put in quotes (for now) so it gets evaluated as a single
+argument.
+
+If slow receives a signal (like ctrl+c or ctrl+z) it will propagate the signal
+to "command".

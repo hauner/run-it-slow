@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DD76F9A0486AA7600D96B5E /* Slow.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* Slow.m */; settings = {ATTRIBUTES = (); }; };
+		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		8DD76F9F0486AA7600D96B5E /* Slow.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* Slow.1 */; };
+		B34C4ED7117058E400DA753C /* SignalerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C4ED6117058E300DA753C /* SignalerTest.m */; };
+		B37446B6115F96DB001A549B /* SamplingSchedulerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446B5115F96DB001A549B /* SamplingSchedulerTest.m */; };
+		B37446B9115F9773001A549B /* Process.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446B8115F9773001A549B /* Process.m */; };
+		B37446E7115F97D6001A549B /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446E6115F97D6001A549B /* Timer.m */; };
+		B37446F3115F98FA001A549B /* SamplingScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446F2115F98FA001A549B /* SamplingScheduler.m */; };
+		B37604A1111575160088BA1B /* ProcessTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B37604A0111575160088BA1B /* ProcessTest.m */; };
+		B376055311158A620088BA1B /* CpuControllerActiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B376055211158A620088BA1B /* CpuControllerActiveTest.m */; };
+		B376082F111787510088BA1B /* TimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B376082E111787510088BA1B /* TimerTest.m */; };
+		B3C6F15810EFB8EE00F54122 /* Signal.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F15710EFB8EE00F54122 /* Signal.m */; };
+		B3C6F16B10EFBD3200F54122 /* Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F16A10EFBD3200F54122 /* Launch.m */; };
+		B3C6F29010F8C95900F54122 /* KernelProcessProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F28F10F8C95900F54122 /* KernelProcessProviderTest.m */; };
+		B3C6F3AB10F8FC9700F54122 /* CpuWatcherTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F3AA10F8FC9700F54122 /* CpuWatcherTest.m */; };
+		B3C6F3BB10F9299800F54122 /* CpuWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F3BA10F9299800F54122 /* CpuWatcher.m */; };
+		B3C6F3FF10F9C7C600F54122 /* CpuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F3FE10F9C7C600F54122 /* CpuController.m */; };
+		B3C6F4C310FA136700F54122 /* TimeSpanTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F4C210FA136700F54122 /* TimeSpanTest.m */; };
+		B3C6F50010FA196A00F54122 /* CpuControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F4FF10FA196A00F54122 /* CpuControllerTest.m */; };
+		B3C6F7371101B10D00F54122 /* ClockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F7361101B10D00F54122 /* ClockTest.m */; };
+		B3C6F7411101B3A000F54122 /* Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F7401101B3A000F54122 /* Clock.m */; };
+		B3C6F7551101B63F00F54122 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F7541101B63F00F54122 /* Times.m */; };
+		B3C6F7C81101C55C00F54122 /* TimesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F7C71101C55C00F54122 /* TimesTest.m */; };
+		B3C9462310E8C8EE00A58878 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C9461810E8C8D200A58878 /* OCMock.framework */; };
+		B3C9463010E8CB9400A58878 /* CpuSampleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C9462F10E8CB9400A58878 /* CpuSampleTest.m */; };
+		B3C9464210E8D46400A58878 /* CpuSampleFinderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C9464110E8D46400A58878 /* CpuSampleFinderTest.m */; };
+		B3C9466010E8DF2900A58878 /* CpuSampleFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C9464A10E8D7DF00A58878 /* CpuSampleFinder.m */; };
+		B3C9466110E8DF3200A58878 /* CpuSample.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C9463C10E8D3C700A58878 /* CpuSample.m */; };
+		B3C946B510E8EC9600A58878 /* KernelProcessProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C946B410E8EC9600A58878 /* KernelProcessProvider.m */; };
+		B3C9485510E9651800A58878 /* KernelProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C9485410E9651800A58878 /* KernelProcess.m */; };
+		B3C9486A10E9666E00A58878 /* KernelProcessLister.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C9486910E9666E00A58878 /* KernelProcessLister.m */; };
+		B3C949B710EA217E00A58878 /* KernelProcessListerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C949B610EA217E00A58878 /* KernelProcessListerTest.m */; };
+		B3C94AC410EA566D00A58878 /* TimeSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C94AC310EA566D00A58878 /* TimeSpan.m */; };
+		B3E300241165E7D100C940E8 /* ProcessSignaler.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E300231165E7D100C940E8 /* ProcessSignaler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3C94C2710EBAAB000A58878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD76F960486AA7600D96B5E;
+			remoteInfo = Slow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F9F0486AA7600D96B5E /* Slow.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* Slow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slow.m; sourceTree = "<group>"; };
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32A70AAB03705E1F00C91783 /* Slow_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slow_Prefix.pch; sourceTree = "<group>"; };
+		8DD76FA10486AA7600D96B5E /* slow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = slow; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34C4ED6117058E300DA753C /* SignalerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignalerTest.m; path = "source-tests/SignalerTest.m"; sourceTree = "<group>"; };
+		B34C4EF611705A2E00DA753C /* SlowUnitTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SlowUnitTests-Info.plist"; path = "source-tests/SlowUnitTests-Info.plist"; sourceTree = "<group>"; };
+		B34C4F0911705B2800DA753C /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		B34C4F0A11705B3400DA753C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		B34C4F0B11705B4000DA753C /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		B37446B5115F96DB001A549B /* SamplingSchedulerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SamplingSchedulerTest.m; path = "source-tests/SamplingSchedulerTest.m"; sourceTree = "<group>"; };
+		B37446B7115F9773001A549B /* Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Process.h; path = source/Process.h; sourceTree = "<group>"; };
+		B37446B8115F9773001A549B /* Process.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Process.m; path = source/Process.m; sourceTree = "<group>"; };
+		B37446E5115F97D6001A549B /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = source/Timer.h; sourceTree = "<group>"; };
+		B37446E6115F97D6001A549B /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Timer.m; path = source/Timer.m; sourceTree = "<group>"; };
+		B37446F1115F98FA001A549B /* SamplingScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SamplingScheduler.h; path = source/SamplingScheduler.h; sourceTree = "<group>"; };
+		B37446F2115F98FA001A549B /* SamplingScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SamplingScheduler.m; path = source/SamplingScheduler.m; sourceTree = "<group>"; };
+		B3744716115F9C89001A549B /* TimerTick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimerTick.h; path = source/TimerTick.h; sourceTree = "<group>"; };
+		B37604A0111575160088BA1B /* ProcessTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessTest.m; path = "source-tests/ProcessTest.m"; sourceTree = "<group>"; };
+		B376055211158A620088BA1B /* CpuControllerActiveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuControllerActiveTest.m; path = "source-tests/CpuControllerActiveTest.m"; sourceTree = "<group>"; };
+		B376082E111787510088BA1B /* TimerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimerTest.m; path = "source-tests/TimerTest.m"; sourceTree = "<group>"; };
+		B3C6F09010EE14F000F54122 /* SpawnProcess.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SpawnProcess.feature; path = "source-tests/features/SpawnProcess.feature"; sourceTree = "<group>"; };
+		B3C6F09310EE222E00F54122 /* Spawn.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Spawn.rb; path = "source-tests/features/step_definitions/Spawn.rb"; sourceTree = "<group>"; };
+		B3C6F0A110EF62E200F54122 /* helper.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = helper.rb; path = "source-tests/features/support/helper.rb"; sourceTree = "<group>"; };
+		B3C6F15610EFB8EE00F54122 /* Signal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Signal.h; path = source/Signal.h; sourceTree = "<group>"; };
+		B3C6F15710EFB8EE00F54122 /* Signal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Signal.m; path = source/Signal.m; sourceTree = "<group>"; };
+		B3C6F16910EFBD3200F54122 /* Launch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Launch.h; path = source/Launch.h; sourceTree = "<group>"; };
+		B3C6F16A10EFBD3200F54122 /* Launch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Launch.m; path = source/Launch.m; sourceTree = "<group>"; };
+		B3C6F28F10F8C95900F54122 /* KernelProcessProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KernelProcessProviderTest.m; path = "source-tests/KernelProcessProviderTest.m"; sourceTree = "<group>"; };
+		B3C6F3AA10F8FC9700F54122 /* CpuWatcherTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuWatcherTest.m; path = "source-tests/CpuWatcherTest.m"; sourceTree = "<group>"; };
+		B3C6F3B910F9299800F54122 /* CpuWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CpuWatcher.h; path = source/CpuWatcher.h; sourceTree = "<group>"; };
+		B3C6F3BA10F9299800F54122 /* CpuWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuWatcher.m; path = source/CpuWatcher.m; sourceTree = "<group>"; };
+		B3C6F3FD10F9C7C600F54122 /* CpuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CpuController.h; path = source/CpuController.h; sourceTree = "<group>"; };
+		B3C6F3FE10F9C7C600F54122 /* CpuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuController.m; path = source/CpuController.m; sourceTree = "<group>"; };
+		B3C6F4C210FA136700F54122 /* TimeSpanTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeSpanTest.m; path = "source-tests/TimeSpanTest.m"; sourceTree = "<group>"; };
+		B3C6F4FF10FA196A00F54122 /* CpuControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuControllerTest.m; path = "source-tests/CpuControllerTest.m"; sourceTree = "<group>"; };
+		B3C6F52B10FA30B500F54122 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		B3C6F6FC10FA495B00F54122 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Times.h; path = source/Times.h; sourceTree = "<group>"; };
+		B3C6F7361101B10D00F54122 /* ClockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockTest.m; path = "source-tests/ClockTest.m"; sourceTree = "<group>"; };
+		B3C6F73F1101B3A000F54122 /* Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Clock.h; path = source/Clock.h; sourceTree = "<group>"; };
+		B3C6F7401101B3A000F54122 /* Clock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Clock.m; path = source/Clock.m; sourceTree = "<group>"; };
+		B3C6F7541101B63F00F54122 /* Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Times.m; path = source/Times.m; sourceTree = "<group>"; };
+		B3C6F7C71101C55C00F54122 /* TimesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimesTest.m; path = "source-tests/TimesTest.m"; sourceTree = "<group>"; };
+		B3C9460710E8C23200A58878 /* SlowUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C9461810E8C8D200A58878 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Framework/OCMock.framework; sourceTree = "<group>"; };
+		B3C9462F10E8CB9400A58878 /* CpuSampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuSampleTest.m; path = "source-tests/CpuSampleTest.m"; sourceTree = "<group>"; };
+		B3C9463B10E8D3C700A58878 /* CpuSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CpuSample.h; path = source/CpuSample.h; sourceTree = "<group>"; };
+		B3C9463C10E8D3C700A58878 /* CpuSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuSample.m; path = source/CpuSample.m; sourceTree = "<group>"; };
+		B3C9464110E8D46400A58878 /* CpuSampleFinderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuSampleFinderTest.m; path = "source-tests/CpuSampleFinderTest.m"; sourceTree = "<group>"; };
+		B3C9464910E8D7DF00A58878 /* CpuSampleFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CpuSampleFinder.h; path = source/CpuSampleFinder.h; sourceTree = "<group>"; };
+		B3C9464A10E8D7DF00A58878 /* CpuSampleFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuSampleFinder.m; path = source/CpuSampleFinder.m; sourceTree = "<group>"; };
+		B3C9465D10E8DF0A00A58878 /* CpuSampleProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CpuSampleProvider.h; path = source/CpuSampleProvider.h; sourceTree = "<group>"; };
+		B3C946B310E8EC9600A58878 /* KernelProcessProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KernelProcessProvider.h; path = source/KernelProcessProvider.h; sourceTree = "<group>"; };
+		B3C946B410E8EC9600A58878 /* KernelProcessProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KernelProcessProvider.m; path = source/KernelProcessProvider.m; sourceTree = "<group>"; };
+		B3C9485310E9651800A58878 /* KernelProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KernelProcess.h; path = source/KernelProcess.h; sourceTree = "<group>"; };
+		B3C9485410E9651800A58878 /* KernelProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KernelProcess.m; path = source/KernelProcess.m; sourceTree = "<group>"; };
+		B3C9486810E9666E00A58878 /* KernelProcessLister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KernelProcessLister.h; path = source/KernelProcessLister.h; sourceTree = "<group>"; };
+		B3C9486910E9666E00A58878 /* KernelProcessLister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KernelProcessLister.m; path = source/KernelProcessLister.m; sourceTree = "<group>"; };
+		B3C949A610EA18B300A58878 /* scratch.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = scratch.txt; path = source/scratch.txt; sourceTree = "<group>"; };
+		B3C949B610EA217E00A58878 /* KernelProcessListerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KernelProcessListerTest.m; path = "source-tests/KernelProcessListerTest.m"; sourceTree = "<group>"; };
+		B3C94AC210EA566D00A58878 /* TimeSpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeSpan.h; path = source/TimeSpan.h; sourceTree = "<group>"; };
+		B3C94AC310EA566D00A58878 /* TimeSpan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeSpan.m; path = source/TimeSpan.m; sourceTree = "<group>"; };
+		B3C94BF210EB6AA600A58878 /* SpawnGivenProcessTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpawnGivenProcessTest.m; path = "source-tests/SpawnGivenProcessTest.m"; sourceTree = "<group>"; };
+		B3E300221165E7D100C940E8 /* ProcessSignaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessSignaler.h; path = source/ProcessSignaler.h; sourceTree = "<group>"; };
+		B3E300231165E7D100C940E8 /* ProcessSignaler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessSignaler.m; path = source/ProcessSignaler.m; sourceTree = "<group>"; };
+		B3E3034911687A7600C940E8 /* LimitCpu.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LimitCpu.feature; path = "source-tests/features/LimitCpu.feature"; sourceTree = "<group>"; };
+		B3E3035311687D1500C940E8 /* LimitCpu.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = LimitCpu.rb; path = "source-tests/features/step_definitions/LimitCpu.rb"; sourceTree = "<group>"; };
+		B3E3036111687F3E00C940E8 /* PropagateSignal.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PropagateSignal.feature; path = "source-tests/features/PropagateSignal.feature"; sourceTree = "<group>"; };
+		B3E303661168812700C940E8 /* Signals.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Signals.rb; path = "source-tests/features/step_definitions/Signals.rb"; sourceTree = "<group>"; };
+		B3E3037B1168832D00C940E8 /* Before.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Before.rb; path = "source-tests/features/step_definitions/Before.rb"; sourceTree = "<group>"; };
+		B3E3038A1168842500C940E8 /* After.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = After.rb; path = "source-tests/features/step_definitions/After.rb"; sourceTree = "<group>"; };
+		B3E304021168B8BA00C940E8 /* ProcessStatus.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = ProcessStatus.rb; path = "source-tests/features/support/ProcessStatus.rb"; sourceTree = "<group>"; };
+		C6859EA3029092ED04C91782 /* Slow.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Slow.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C9460410E8C23200A58878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C9462310E8C8EE00A58878 /* OCMock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* Slow */ = {
+			isa = PBXGroup;
+			children = (
+				B3C94D0A10ECB69600A58878 /* Source Tests Acceptance */,
+				B3C9461710E8C88600A58878 /* Source Tests */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859EA2029092E104C91782 /* Documentation */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = Slow;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6F37710F8E74800F54122 /* kernel */,
+				B3C6F37610F8E71800F54122 /* util */,
+				32A70AAB03705E1F00C91783 /* Slow_Prefix.pch */,
+				08FB7796FE84155DC02AAC07 /* Slow.m */,
+				B3C9463B10E8D3C700A58878 /* CpuSample.h */,
+				B3C9463C10E8D3C700A58878 /* CpuSample.m */,
+				B3C9464910E8D7DF00A58878 /* CpuSampleFinder.h */,
+				B3C9464A10E8D7DF00A58878 /* CpuSampleFinder.m */,
+				B3C9465D10E8DF0A00A58878 /* CpuSampleProvider.h */,
+				B3C949A610EA18B300A58878 /* scratch.txt */,
+				B3C6F15610EFB8EE00F54122 /* Signal.h */,
+				B3C6F15710EFB8EE00F54122 /* Signal.m */,
+				B3C6F16910EFBD3200F54122 /* Launch.h */,
+				B3C6F16A10EFBD3200F54122 /* Launch.m */,
+				B3C6F3B910F9299800F54122 /* CpuWatcher.h */,
+				B3C6F3BA10F9299800F54122 /* CpuWatcher.m */,
+				B3C6F3FD10F9C7C600F54122 /* CpuController.h */,
+				B3C6F3FE10F9C7C600F54122 /* CpuController.m */,
+				B37446B7115F9773001A549B /* Process.h */,
+				B37446B8115F9773001A549B /* Process.m */,
+				B37446F1115F98FA001A549B /* SamplingScheduler.h */,
+				B37446F2115F98FA001A549B /* SamplingScheduler.m */,
+				B37446E5115F97D6001A549B /* Timer.h */,
+				B37446E6115F97D6001A549B /* Timer.m */,
+				B3744716115F9C89001A549B /* TimerTick.h */,
+				B3E300221165E7D100C940E8 /* ProcessSignaler.h */,
+				B3E300231165E7D100C940E8 /* ProcessSignaler.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6F52B10FA30B500F54122 /* CoreServices.framework */,
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+				B3C9461810E8C8D200A58878 /* OCMock.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* slow */,
+				B3C9460710E8C23200A58878 /* SlowUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3760832111787810088BA1B /* moving */ = {
+			isa = PBXGroup;
+			children = (
+				B376055211158A620088BA1B /* CpuControllerActiveTest.m */,
+				B3C6F4FF10FA196A00F54122 /* CpuControllerTest.m */,
+			);
+			name = moving;
+			sourceTree = "<group>";
+		};
+		B3C6F08F10EE14CF00F54122 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6F09210EE220600F54122 /* Steps */,
+				B3C6F0A010EF627900F54122 /* Support */,
+				B3E3034911687A7600C940E8 /* LimitCpu.feature */,
+				B3E3036111687F3E00C940E8 /* PropagateSignal.feature */,
+				B3C6F09010EE14F000F54122 /* SpawnProcess.feature */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		B3C6F09210EE220600F54122 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6F09310EE222E00F54122 /* Spawn.rb */,
+				B3E3035311687D1500C940E8 /* LimitCpu.rb */,
+				B3E303661168812700C940E8 /* Signals.rb */,
+				B3E3037B1168832D00C940E8 /* Before.rb */,
+				B3E3038A1168842500C940E8 /* After.rb */,
+			);
+			name = Steps;
+			sourceTree = "<group>";
+		};
+		B3C6F0A010EF627900F54122 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B3E304021168B8BA00C940E8 /* ProcessStatus.rb */,
+				B3C6F0A110EF62E200F54122 /* helper.rb */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		B3C6F37610F8E71800F54122 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6F6FC10FA495B00F54122 /* Times.h */,
+				B3C6F7541101B63F00F54122 /* Times.m */,
+				B3C94AC210EA566D00A58878 /* TimeSpan.h */,
+				B3C94AC310EA566D00A58878 /* TimeSpan.m */,
+				B3C6F73F1101B3A000F54122 /* Clock.h */,
+				B3C6F7401101B3A000F54122 /* Clock.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		B3C6F37710F8E74800F54122 /* kernel */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9486910E9666E00A58878 /* KernelProcessLister.m */,
+				B3C9486810E9666E00A58878 /* KernelProcessLister.h */,
+				B3C9485410E9651800A58878 /* KernelProcess.m */,
+				B3C9485310E9651800A58878 /* KernelProcess.h */,
+				B3C946B310E8EC9600A58878 /* KernelProcessProvider.h */,
+				B3C946B410E8EC9600A58878 /* KernelProcessProvider.m */,
+			);
+			name = kernel;
+			sourceTree = "<group>";
+		};
+		B3C6F37810F8E78000F54122 /* kernel */ = {
+			isa = PBXGroup;
+			children = (
+				B3C949B610EA217E00A58878 /* KernelProcessListerTest.m */,
+				B3C6F28F10F8C95900F54122 /* KernelProcessProviderTest.m */,
+			);
+			name = kernel;
+			sourceTree = "<group>";
+		};
+		B3C6F4BF10FA12E700F54122 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6F4C210FA136700F54122 /* TimeSpanTest.m */,
+				B3C6F7361101B10D00F54122 /* ClockTest.m */,
+				B3C6F7C71101C55C00F54122 /* TimesTest.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		B3C9461710E8C88600A58878 /* Source Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B34C4EF611705A2E00DA753C /* SlowUnitTests-Info.plist */,
+				B34C4ED6117058E300DA753C /* SignalerTest.m */,
+				B3C6F37810F8E78000F54122 /* kernel */,
+				B3C6F4BF10FA12E700F54122 /* util */,
+				B3760832111787810088BA1B /* moving */,
+				B3C9462F10E8CB9400A58878 /* CpuSampleTest.m */,
+				B3C9464110E8D46400A58878 /* CpuSampleFinderTest.m */,
+				B3C6F3AA10F8FC9700F54122 /* CpuWatcherTest.m */,
+				B37604A0111575160088BA1B /* ProcessTest.m */,
+				B376082E111787510088BA1B /* TimerTest.m */,
+				B37446B5115F96DB001A549B /* SamplingSchedulerTest.m */,
+			);
+			name = "Source Tests";
+			sourceTree = "<group>";
+		};
+		B3C94D0A10ECB69600A58878 /* Source Tests Acceptance */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6F08F10EE14CF00F54122 /* Features */,
+				B3C94BF210EB6AA600A58878 /* SpawnGivenProcessTest.m */,
+			);
+			name = "Source Tests Acceptance";
+			sourceTree = "<group>";
+		};
+		C6859EA2029092E104C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				B34C4F0B11705B4000DA753C /* INSTALL */,
+				B34C4F0A11705B3400DA753C /* README */,
+				B34C4F0911705B2800DA753C /* CHANGES */,
+				C6859EA3029092ED04C91782 /* Slow.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F960486AA7600D96B5E /* Slow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "Slow" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Slow;
+			productInstallPath = "$(HOME)/bin";
+			productName = Slow;
+			productReference = 8DD76FA10486AA7600D96B5E /* slow */;
+			productType = "com.apple.product-type.tool";
+		};
+		B3C9460610E8C23200A58878 /* SlowUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3C9460B10E8C23300A58878 /* Build configuration list for PBXNativeTarget "SlowUnitTests" */;
+			buildPhases = (
+				B3C9460210E8C23200A58878 /* Resources */,
+				B3C9460310E8C23200A58878 /* Sources */,
+				B3C9460410E8C23200A58878 /* Frameworks */,
+				B3C9460510E8C23200A58878 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3C94C2810EBAAB000A58878 /* PBXTargetDependency */,
+			);
+			name = SlowUnitTests;
+			productName = UnitTests;
+			productReference = B3C9460710E8C23200A58878 /* SlowUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "Slow" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* Slow */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* Slow */,
+				B3C9460610E8C23200A58878 /* SlowUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3C9460210E8C23200A58878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3C9460510E8C23200A58878 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\nexport SLOW_PATH=\"${BUILT_PRODUCTS_DIR}\"\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9A0486AA7600D96B5E /* Slow.m in Sources */,
+				B3C9466010E8DF2900A58878 /* CpuSampleFinder.m in Sources */,
+				B3C9466110E8DF3200A58878 /* CpuSample.m in Sources */,
+				B3C946B510E8EC9600A58878 /* KernelProcessProvider.m in Sources */,
+				B3C9485510E9651800A58878 /* KernelProcess.m in Sources */,
+				B3C9486A10E9666E00A58878 /* KernelProcessLister.m in Sources */,
+				B3C94AC410EA566D00A58878 /* TimeSpan.m in Sources */,
+				B3C6F15810EFB8EE00F54122 /* Signal.m in Sources */,
+				B3C6F16B10EFBD3200F54122 /* Launch.m in Sources */,
+				B3C6F3BB10F9299800F54122 /* CpuWatcher.m in Sources */,
+				B3C6F3FF10F9C7C600F54122 /* CpuController.m in Sources */,
+				B3C6F7411101B3A000F54122 /* Clock.m in Sources */,
+				B3C6F7551101B63F00F54122 /* Times.m in Sources */,
+				B37446B9115F9773001A549B /* Process.m in Sources */,
+				B37446E7115F97D6001A549B /* Timer.m in Sources */,
+				B37446F3115F98FA001A549B /* SamplingScheduler.m in Sources */,
+				B3E300241165E7D100C940E8 /* ProcessSignaler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C9460310E8C23200A58878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C9463010E8CB9400A58878 /* CpuSampleTest.m in Sources */,
+				B3C9464210E8D46400A58878 /* CpuSampleFinderTest.m in Sources */,
+				B3C949B710EA217E00A58878 /* KernelProcessListerTest.m in Sources */,
+				B3C6F29010F8C95900F54122 /* KernelProcessProviderTest.m in Sources */,
+				B3C6F3AB10F8FC9700F54122 /* CpuWatcherTest.m in Sources */,
+				B3C6F4C310FA136700F54122 /* TimeSpanTest.m in Sources */,
+				B3C6F50010FA196A00F54122 /* CpuControllerTest.m in Sources */,
+				B3C6F7371101B10D00F54122 /* ClockTest.m in Sources */,
+				B3C6F7C81101C55C00F54122 /* TimesTest.m in Sources */,
+				B37604A1111575160088BA1B /* ProcessTest.m in Sources */,
+				B376055311158A620088BA1B /* CpuControllerActiveTest.m in Sources */,
+				B376082F111787510088BA1B /* TimerTest.m in Sources */,
+				B37446B6115F96DB001A549B /* SamplingSchedulerTest.m in Sources */,
+				B34C4ED7117058E400DA753C /* SignalerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3C94C2810EBAAB000A58878 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DD76F960486AA7600D96B5E /* Slow */;
+			targetProxy = B3C94C2710EBAAB000A58878 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB927508733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Slow_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				LD_RUNPATH_SEARCH_PATHS = "$(SRCROOT)/Framework";
+				PRODUCT_NAME = slow;
+			};
+			name = Debug;
+		};
+		1DEB927608733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Slow_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				LD_RUNPATH_SEARCH_PATHS = "$(SRCROOT)/Framework";
+				PRODUCT_NAME = slow;
+			};
+			name = Release;
+		};
+		1DEB927908733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slow";
+			};
+			name = Debug;
+		};
+		1DEB927A08733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slow";
+			};
+			name = Release;
+		};
+		B3C9460910E8C23300A58878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/slow";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(SRCROOT)/Framework",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/source",
+					"$(SRCROOT)/source-tests",
+				);
+				INFOPLIST_FILE = "source-tests/SlowUnitTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					OCMock,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SlowUnitTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B3C9460A10E8C23300A58878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/slow";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(SRCROOT)/Framework",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/source",
+					"$(SRCROOT)/source-tests",
+				);
+				INFOPLIST_FILE = "source-tests/SlowUnitTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					OCMock,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SlowUnitTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "Slow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927508733DD40010E9CD /* Debug */,
+				1DEB927608733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "Slow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927908733DD40010E9CD /* Debug */,
+				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3C9460B10E8C23300A58878 /* Build configuration list for PBXNativeTarget "SlowUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C9460910E8C23300A58878 /* Debug */,
+				B3C9460A10E8C23300A58878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

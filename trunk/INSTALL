@@ -1,0 +1,30 @@
+$LastChangedDate:$
+
+Installation
+============
+
+Copy slow anywhere into your PATH. slow requires root rights to watch the
+cpu times. To set the proper rights on slow run the following commands:
+
+sudo chown root:wheel slow
+sudo chmod u+s slow
+
+
+Acceptance Test
+===============
+
+To run the cucumber acceptance test..
+
+- build slow with Xcode.
+- Set the user rights of build/Debug/slow (see Installation above).
+- export SLOW_DIR=/<wherever>/slow-trunk/build/Debug
+- run cucumber from build/Debug like this
+  cucumber ../../source-tests/features
+
+
+Building with XCode
+===================
+
+The XCode build expects OCMock.framework in <slow-root>/Framework.
+
+It should build...

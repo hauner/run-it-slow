@@ -90,6 +90,8 @@ const NanoSeconds second = 1000000000;
 int main (int argc, const char * argv[]) {
   objc_startCollectorThread();
 
+  
+  
   NSString* command = [NSString stringWithFormat:@"%s", argv[1]];
   NSLog(@"command (%@)", command);
 
@@ -100,7 +102,7 @@ int main (int argc, const char * argv[]) {
                              cpuLimit:[TimeSpan withNanoSeconds:
                                        500000000 
 //                                         100000000 
-//                                       -  10000000]];
+                                       -  10000000]];
   
   [Signal createSigintHandler:[process pid]];
   

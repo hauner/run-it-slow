@@ -11,6 +11,8 @@
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* Slow.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* Slow.1 */; };
 		B34C4ED7117058E400DA753C /* SignalerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C4ED6117058E300DA753C /* SignalerTest.m */; };
+		B34C4F4D1170B18600DA753C /* ArgumentParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C4F4C1170B18600DA753C /* ArgumentParserTest.m */; };
+		B34C4F5F1170B51100DA753C /* ArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C4F5E1170B51100DA753C /* ArgumentParser.m */; };
 		B37446B6115F96DB001A549B /* SamplingSchedulerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446B5115F96DB001A549B /* SamplingSchedulerTest.m */; };
 		B37446B9115F9773001A549B /* Process.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446B8115F9773001A549B /* Process.m */; };
 		B37446E7115F97D6001A549B /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446E6115F97D6001A549B /* Timer.m */; };
@@ -76,6 +78,10 @@
 		B34C4F0911705B2800DA753C /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
 		B34C4F0A11705B3400DA753C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		B34C4F0B11705B4000DA753C /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		B34C4F4C1170B18600DA753C /* ArgumentParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArgumentParserTest.m; path = "source-tests/ArgumentParserTest.m"; sourceTree = "<group>"; };
+		B34C4F5D1170B51100DA753C /* ArgumentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArgumentParser.h; path = source/ArgumentParser.h; sourceTree = "<group>"; };
+		B34C4F5E1170B51100DA753C /* ArgumentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArgumentParser.m; path = source/ArgumentParser.m; sourceTree = "<group>"; };
+		B34C50B01170E40D00DA753C /* Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Version.h; path = source/Version.h; sourceTree = "<group>"; };
 		B37446B5115F96DB001A549B /* SamplingSchedulerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SamplingSchedulerTest.m; path = "source-tests/SamplingSchedulerTest.m"; sourceTree = "<group>"; };
 		B37446B7115F9773001A549B /* Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Process.h; path = source/Process.h; sourceTree = "<group>"; };
 		B37446B8115F9773001A549B /* Process.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Process.m; path = source/Process.m; sourceTree = "<group>"; };
@@ -204,6 +210,9 @@
 				B3744716115F9C89001A549B /* TimerTick.h */,
 				B3E300221165E7D100C940E8 /* ProcessSignaler.h */,
 				B3E300231165E7D100C940E8 /* ProcessSignaler.m */,
+				B34C4F5D1170B51100DA753C /* ArgumentParser.h */,
+				B34C4F5E1170B51100DA753C /* ArgumentParser.m */,
+				B34C50B01170E40D00DA753C /* Version.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -328,6 +337,7 @@
 				B37604A0111575160088BA1B /* ProcessTest.m */,
 				B376082E111787510088BA1B /* TimerTest.m */,
 				B37446B5115F96DB001A549B /* SamplingSchedulerTest.m */,
+				B34C4F4C1170B18600DA753C /* ArgumentParserTest.m */,
 			);
 			name = "Source Tests";
 			sourceTree = "<group>";
@@ -458,6 +468,7 @@
 				B37446E7115F97D6001A549B /* Timer.m in Sources */,
 				B37446F3115F98FA001A549B /* SamplingScheduler.m in Sources */,
 				B3E300241165E7D100C940E8 /* ProcessSignaler.m in Sources */,
+				B34C4F5F1170B51100DA753C /* ArgumentParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +490,7 @@
 				B376082F111787510088BA1B /* TimerTest.m in Sources */,
 				B37446B6115F96DB001A549B /* SamplingSchedulerTest.m in Sources */,
 				B34C4ED7117058E400DA753C /* SignalerTest.m in Sources */,
+				B34C4F4D1170B18600DA753C /* ArgumentParserTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

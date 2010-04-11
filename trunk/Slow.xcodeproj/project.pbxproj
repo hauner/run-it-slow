@@ -13,21 +13,19 @@
 		B34C4ED7117058E400DA753C /* SignalerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C4ED6117058E300DA753C /* SignalerTest.m */; };
 		B34C4F4D1170B18600DA753C /* ArgumentParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C4F4C1170B18600DA753C /* ArgumentParserTest.m */; };
 		B34C4F5F1170B51100DA753C /* ArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C4F5E1170B51100DA753C /* ArgumentParser.m */; };
+		B34C517D1171ACBC00DA753C /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C517C1171ACBC00DA753C /* Main.m */; };
 		B37446B6115F96DB001A549B /* SamplingSchedulerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446B5115F96DB001A549B /* SamplingSchedulerTest.m */; };
 		B37446B9115F9773001A549B /* Process.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446B8115F9773001A549B /* Process.m */; };
 		B37446E7115F97D6001A549B /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446E6115F97D6001A549B /* Timer.m */; };
 		B37446F3115F98FA001A549B /* SamplingScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = B37446F2115F98FA001A549B /* SamplingScheduler.m */; };
 		B37604A1111575160088BA1B /* ProcessTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B37604A0111575160088BA1B /* ProcessTest.m */; };
-		B376055311158A620088BA1B /* CpuControllerActiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B376055211158A620088BA1B /* CpuControllerActiveTest.m */; };
 		B376082F111787510088BA1B /* TimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B376082E111787510088BA1B /* TimerTest.m */; };
 		B3C6F15810EFB8EE00F54122 /* Signal.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F15710EFB8EE00F54122 /* Signal.m */; };
 		B3C6F16B10EFBD3200F54122 /* Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F16A10EFBD3200F54122 /* Launch.m */; };
 		B3C6F29010F8C95900F54122 /* KernelProcessProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F28F10F8C95900F54122 /* KernelProcessProviderTest.m */; };
 		B3C6F3AB10F8FC9700F54122 /* CpuWatcherTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F3AA10F8FC9700F54122 /* CpuWatcherTest.m */; };
 		B3C6F3BB10F9299800F54122 /* CpuWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F3BA10F9299800F54122 /* CpuWatcher.m */; };
-		B3C6F3FF10F9C7C600F54122 /* CpuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F3FE10F9C7C600F54122 /* CpuController.m */; };
 		B3C6F4C310FA136700F54122 /* TimeSpanTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F4C210FA136700F54122 /* TimeSpanTest.m */; };
-		B3C6F50010FA196A00F54122 /* CpuControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F4FF10FA196A00F54122 /* CpuControllerTest.m */; };
 		B3C6F7371101B10D00F54122 /* ClockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F7361101B10D00F54122 /* ClockTest.m */; };
 		B3C6F7411101B3A000F54122 /* Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F7401101B3A000F54122 /* Clock.m */; };
 		B3C6F7551101B63F00F54122 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6F7541101B63F00F54122 /* Times.m */; };
@@ -82,6 +80,8 @@
 		B34C4F5D1170B51100DA753C /* ArgumentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArgumentParser.h; path = source/ArgumentParser.h; sourceTree = "<group>"; };
 		B34C4F5E1170B51100DA753C /* ArgumentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArgumentParser.m; path = source/ArgumentParser.m; sourceTree = "<group>"; };
 		B34C50B01170E40D00DA753C /* Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Version.h; path = source/Version.h; sourceTree = "<group>"; };
+		B34C517B1171ACBC00DA753C /* Main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Main.h; path = source/Main.h; sourceTree = "<group>"; };
+		B34C517C1171ACBC00DA753C /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Main.m; path = source/Main.m; sourceTree = "<group>"; };
 		B37446B5115F96DB001A549B /* SamplingSchedulerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SamplingSchedulerTest.m; path = "source-tests/SamplingSchedulerTest.m"; sourceTree = "<group>"; };
 		B37446B7115F9773001A549B /* Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Process.h; path = source/Process.h; sourceTree = "<group>"; };
 		B37446B8115F9773001A549B /* Process.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Process.m; path = source/Process.m; sourceTree = "<group>"; };
@@ -91,7 +91,6 @@
 		B37446F2115F98FA001A549B /* SamplingScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SamplingScheduler.m; path = source/SamplingScheduler.m; sourceTree = "<group>"; };
 		B3744716115F9C89001A549B /* TimerTick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimerTick.h; path = source/TimerTick.h; sourceTree = "<group>"; };
 		B37604A0111575160088BA1B /* ProcessTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessTest.m; path = "source-tests/ProcessTest.m"; sourceTree = "<group>"; };
-		B376055211158A620088BA1B /* CpuControllerActiveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuControllerActiveTest.m; path = "source-tests/CpuControllerActiveTest.m"; sourceTree = "<group>"; };
 		B376082E111787510088BA1B /* TimerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimerTest.m; path = "source-tests/TimerTest.m"; sourceTree = "<group>"; };
 		B3C6F09010EE14F000F54122 /* SpawnProcess.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SpawnProcess.feature; path = "source-tests/features/SpawnProcess.feature"; sourceTree = "<group>"; };
 		B3C6F09310EE222E00F54122 /* Spawn.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Spawn.rb; path = "source-tests/features/step_definitions/Spawn.rb"; sourceTree = "<group>"; };
@@ -104,10 +103,7 @@
 		B3C6F3AA10F8FC9700F54122 /* CpuWatcherTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuWatcherTest.m; path = "source-tests/CpuWatcherTest.m"; sourceTree = "<group>"; };
 		B3C6F3B910F9299800F54122 /* CpuWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CpuWatcher.h; path = source/CpuWatcher.h; sourceTree = "<group>"; };
 		B3C6F3BA10F9299800F54122 /* CpuWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuWatcher.m; path = source/CpuWatcher.m; sourceTree = "<group>"; };
-		B3C6F3FD10F9C7C600F54122 /* CpuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CpuController.h; path = source/CpuController.h; sourceTree = "<group>"; };
-		B3C6F3FE10F9C7C600F54122 /* CpuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuController.m; path = source/CpuController.m; sourceTree = "<group>"; };
 		B3C6F4C210FA136700F54122 /* TimeSpanTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeSpanTest.m; path = "source-tests/TimeSpanTest.m"; sourceTree = "<group>"; };
-		B3C6F4FF10FA196A00F54122 /* CpuControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CpuControllerTest.m; path = "source-tests/CpuControllerTest.m"; sourceTree = "<group>"; };
 		B3C6F52B10FA30B500F54122 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		B3C6F6FC10FA495B00F54122 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Times.h; path = source/Times.h; sourceTree = "<group>"; };
 		B3C6F7361101B10D00F54122 /* ClockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockTest.m; path = "source-tests/ClockTest.m"; sourceTree = "<group>"; };
@@ -134,7 +130,6 @@
 		B3C949B610EA217E00A58878 /* KernelProcessListerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KernelProcessListerTest.m; path = "source-tests/KernelProcessListerTest.m"; sourceTree = "<group>"; };
 		B3C94AC210EA566D00A58878 /* TimeSpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeSpan.h; path = source/TimeSpan.h; sourceTree = "<group>"; };
 		B3C94AC310EA566D00A58878 /* TimeSpan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeSpan.m; path = source/TimeSpan.m; sourceTree = "<group>"; };
-		B3C94BF210EB6AA600A58878 /* SpawnGivenProcessTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpawnGivenProcessTest.m; path = "source-tests/SpawnGivenProcessTest.m"; sourceTree = "<group>"; };
 		B3E300221165E7D100C940E8 /* ProcessSignaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessSignaler.h; path = source/ProcessSignaler.h; sourceTree = "<group>"; };
 		B3E300231165E7D100C940E8 /* ProcessSignaler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessSignaler.m; path = source/ProcessSignaler.m; sourceTree = "<group>"; };
 		B3E3034911687A7600C940E8 /* LimitCpu.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LimitCpu.feature; path = "source-tests/features/LimitCpu.feature"; sourceTree = "<group>"; };
@@ -199,8 +194,6 @@
 				B3C6F16A10EFBD3200F54122 /* Launch.m */,
 				B3C6F3B910F9299800F54122 /* CpuWatcher.h */,
 				B3C6F3BA10F9299800F54122 /* CpuWatcher.m */,
-				B3C6F3FD10F9C7C600F54122 /* CpuController.h */,
-				B3C6F3FE10F9C7C600F54122 /* CpuController.m */,
 				B37446B7115F9773001A549B /* Process.h */,
 				B37446B8115F9773001A549B /* Process.m */,
 				B37446F1115F98FA001A549B /* SamplingScheduler.h */,
@@ -213,6 +206,8 @@
 				B34C4F5D1170B51100DA753C /* ArgumentParser.h */,
 				B34C4F5E1170B51100DA753C /* ArgumentParser.m */,
 				B34C50B01170E40D00DA753C /* Version.h */,
+				B34C517B1171ACBC00DA753C /* Main.h */,
+				B34C517C1171ACBC00DA753C /* Main.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -234,15 +229,6 @@
 				B3C9460710E8C23200A58878 /* SlowUnitTests.octest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B3760832111787810088BA1B /* moving */ = {
-			isa = PBXGroup;
-			children = (
-				B376055211158A620088BA1B /* CpuControllerActiveTest.m */,
-				B3C6F4FF10FA196A00F54122 /* CpuControllerTest.m */,
-			);
-			name = moving;
 			sourceTree = "<group>";
 		};
 		B3C6F08F10EE14CF00F54122 /* Features */ = {
@@ -327,10 +313,9 @@
 			isa = PBXGroup;
 			children = (
 				B34C4EF611705A2E00DA753C /* SlowUnitTests-Info.plist */,
-				B34C4ED6117058E300DA753C /* SignalerTest.m */,
 				B3C6F37810F8E78000F54122 /* kernel */,
 				B3C6F4BF10FA12E700F54122 /* util */,
-				B3760832111787810088BA1B /* moving */,
+				B34C4ED6117058E300DA753C /* SignalerTest.m */,
 				B3C9462F10E8CB9400A58878 /* CpuSampleTest.m */,
 				B3C9464110E8D46400A58878 /* CpuSampleFinderTest.m */,
 				B3C6F3AA10F8FC9700F54122 /* CpuWatcherTest.m */,
@@ -346,7 +331,6 @@
 			isa = PBXGroup;
 			children = (
 				B3C6F08F10EE14CF00F54122 /* Features */,
-				B3C94BF210EB6AA600A58878 /* SpawnGivenProcessTest.m */,
 			);
 			name = "Source Tests Acceptance";
 			sourceTree = "<group>";
@@ -461,7 +445,6 @@
 				B3C6F15810EFB8EE00F54122 /* Signal.m in Sources */,
 				B3C6F16B10EFBD3200F54122 /* Launch.m in Sources */,
 				B3C6F3BB10F9299800F54122 /* CpuWatcher.m in Sources */,
-				B3C6F3FF10F9C7C600F54122 /* CpuController.m in Sources */,
 				B3C6F7411101B3A000F54122 /* Clock.m in Sources */,
 				B3C6F7551101B63F00F54122 /* Times.m in Sources */,
 				B37446B9115F9773001A549B /* Process.m in Sources */,
@@ -469,6 +452,7 @@
 				B37446F3115F98FA001A549B /* SamplingScheduler.m in Sources */,
 				B3E300241165E7D100C940E8 /* ProcessSignaler.m in Sources */,
 				B34C4F5F1170B51100DA753C /* ArgumentParser.m in Sources */,
+				B34C517D1171ACBC00DA753C /* Main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,11 +466,9 @@
 				B3C6F29010F8C95900F54122 /* KernelProcessProviderTest.m in Sources */,
 				B3C6F3AB10F8FC9700F54122 /* CpuWatcherTest.m in Sources */,
 				B3C6F4C310FA136700F54122 /* TimeSpanTest.m in Sources */,
-				B3C6F50010FA196A00F54122 /* CpuControllerTest.m in Sources */,
 				B3C6F7371101B10D00F54122 /* ClockTest.m in Sources */,
 				B3C6F7C81101C55C00F54122 /* TimesTest.m in Sources */,
 				B37604A1111575160088BA1B /* ProcessTest.m in Sources */,
-				B376055311158A620088BA1B /* CpuControllerActiveTest.m in Sources */,
 				B376082F111787510088BA1B /* TimerTest.m in Sources */,
 				B37446B6115F96DB001A549B /* SamplingSchedulerTest.m in Sources */,
 				B34C4ED7117058E400DA753C /* SignalerTest.m in Sources */,
@@ -613,7 +595,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/slow";
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 					"$(SRCROOT)/Framework",
@@ -630,6 +612,7 @@
 				);
 				INFOPLIST_FILE = "source-tests/SlowUnitTests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,

@@ -19,15 +19,12 @@ and cucumber.
 Usage
 =====
 
-Note: -p is not yet implemented, the cpu percetange is hardcoded as 50%.
-
-
 slow is called like this:
 
 slow "command"
-slow -p 10 "command"
+slow -l 10 "command"
 
-The -p option tells slow the allowed cpu usage percentage, ie. -p 10 will allow
+The -l option tells slow the allowed cpu usage percentage, ie. -l 10 will allow
 "command" to use up to 10 percent of the available cpu power.
 
 "command" has to be put in quotes (for now) so it gets evaluated as a single

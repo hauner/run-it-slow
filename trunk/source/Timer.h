@@ -20,7 +20,7 @@
  * ==========================================================================
  */
 
-// Slow
+// slow
 #import "TimerTick.h"
 @class NSTimer;
 
@@ -28,9 +28,10 @@
 @interface Timer : NSObject {
   NSTimer*       timer;
   id <TimerTick> tick;
+  double         interval;
 }
 
-+ (Timer*)withTimerTick:(id <TimerTick>)tick;
++ (Timer*)withTimerTick:(id <TimerTick>)tick Interval:(double)interval;
 
 - (void)run;
 - (void)stop;

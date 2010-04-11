@@ -33,3 +33,6 @@ NanoSeconds now ();
 
 /** convert mach absolute times into nano seconds. */
 uint64_t toNanoSeconds (uint64_t abstime);
+
+
+extern const NanoSeconds Second;

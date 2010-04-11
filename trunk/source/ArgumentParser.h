@@ -20,25 +20,20 @@
  * ==========================================================================
  */
 
-// slow
-//#import <Cocoa/Cocoa.h>
-
 
 @interface ArgumentParser : NSObject {
-  // in
   int    argc;
   char** argv;
   
-  // out
   int       percent;
   NSString* command;
 }
 
-+ (ArgumentParser*)withArgCount:(int)count Args:(char*[])argv;
++ (ArgumentParser*)withArgCount:(int)count Args:(const char*[])argv;
 
 - (BOOL)parse;
 
 - (int)percent;
-
+- (NSString*)command;
 
 @end

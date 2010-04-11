@@ -26,21 +26,22 @@
 
 @implementation Timer
 
-- (id)init:(id <TimerTick>)aTick {
+- (id)initWithTimerTick:(id <TimerTick>)aTick Interval:(double)anInterval {
   if (self = [super init]) {
-    timer = nil;
-    tick  = aTick;
+    timer    = nil;
+    tick     = aTick;
+    interval = anInterval;
   }
   return self;
 }
 
-+ (Timer*)withTimerTick:(id <TimerTick>)tick {
-  return [[Timer alloc] init:tick];
++ (Timer*)withTimerTick:(id <TimerTick>)tick Interval:(double)interval {
+  return [[Timer alloc] initWithTimerTick:tick Interval:interval];
 }
   
 - (void)run {
   timer = [NSTimer 
-           scheduledTimerWithTimeInterval:0.1
+           scheduledTimerWithTimeInterval:interval
            target:self
            selector:@selector(tick)
            userInfo:nil

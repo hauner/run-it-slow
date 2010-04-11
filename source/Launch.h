@@ -24,7 +24,8 @@
   NSTask*   _task;
 }
 
-- (id)initWithCommand:(NSString*)command;
++ (id)withCommand:(NSString*)command;
+
 - (void)launch;
 - (void)wait;
 - (pid_t)pid;

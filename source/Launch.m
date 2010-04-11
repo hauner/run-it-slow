@@ -36,6 +36,11 @@
   return self;  
 }
 
++ (id)withCommand:(NSString*)command {
+  return [[Launch alloc] initWithCommand:command];
+}
+
+
 - (void)launch {
   [_task launch];
 }

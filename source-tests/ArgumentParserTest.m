@@ -43,10 +43,10 @@
 }
 
 - (void)testParseFailsWithoutArguments {
-  int   argc = 1;
-  char* argv[] = {
+  const char* argv[] = {
     "slow"
   };
+  int argc = 1;
   
   id args = [ArgumentParser withArgCount:argc Args:argv];
 
@@ -55,10 +55,10 @@
 }
 
 - (void)testParseFailsWithVersionArguments {
-  int   argc = 2;
-  char* argv[] = {
+  const char* argv[] = {
     "slow", "-v"
   };
+  int argc = 2;
   
   id args = [ArgumentParser withArgCount:argc Args:argv];
   
@@ -67,10 +67,10 @@
 }
 
 - (void)testPercentWithNoArguments {
-  int   argc = 1;
-  char* argv[] = {
+  const char* argv[] = {
     "slow"
   };
+  int argc = 1;
   
   id args = [ArgumentParser withArgCount:argc Args:argv];
   [args parse];
@@ -80,10 +80,10 @@
 }
 
 - (void)testPercentWithOptionButNoValue {
-  int   argc = 2;
-  char* argv[] = {
-    "slow", "-p"
+  const char* argv[] = {
+    "slow", "-l"
   };
+  int argc = 2;
   
   id args = [ArgumentParser withArgCount:argc Args:argv];
   [args parse];
@@ -93,10 +93,10 @@
 }
 
 - (void)testPercentWithOptionAndValue {
-  int   argc = 3;
-  char* argv[] = {
-    "slow", "-p", "10"
+  const char* argv[] = {
+    "slow", "-l", "10"
   };
+  int argc = 3;
   
   id args = [ArgumentParser withArgCount:argc Args:argv];
   [args parse];
@@ -105,6 +105,38 @@
   STAssertEquals (percent, 10, @"");
 }
 
+- (void)testCommandWithOption {
+  const char* argv[] = {
+    "slow", "make with parameter"
+  };
+  int argc = 2;
+  
+  id args = [ArgumentParser withArgCount:argc Args:argv];
+  BOOL result = [args parse];
+  STAssertEquals (result, YES, @"should be YES but was NO!");
+  
+  NSString* cmd = [args command];
+  NSString* exp = [NSString stringWithFormat:@"%s", "make with parameter"];
+  STAssertEqualObjects (cmd, exp, @"");
+}
+
+- (void)testParsePercentAndCommandOption {
+  const char* argv[] = {
+    "slow", "-l", "10", "make"
+  };
+  int argc = 4;
+  
+  id args = [ArgumentParser withArgCount:argc Args:argv];
+  BOOL result = [args parse];
+  STAssertEquals (result, YES, @"should be YES but was NO!");
+
+  int percent = [args percent];
+  STAssertEquals (percent, 10, @"");  
+  
+  NSString* cmd = [args command];
+  NSString* exp = [NSString stringWithFormat:@"%s", "make"];
+  STAssertEqualObjects (cmd, exp, @"");
+}
 
 
 @end

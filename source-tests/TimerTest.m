@@ -48,7 +48,7 @@
   id tick = [OCMockObject mockForProtocol:@protocol(TimerTick)];
   [[tick expect] tick];
   
-  id timer = [Timer withTimerTick:tick];
+  id timer = [Timer withTimerTick:tick Interval:0.1];
   [timer tick];
 
   [tick verify];

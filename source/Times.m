@@ -43,3 +43,5 @@ uint64_t toNanoSeconds (uint64_t abstime) {
   
   return abstime * timebase.numer / timebase.denom;
 }
+
+const NanoSeconds Second = 1000000000;

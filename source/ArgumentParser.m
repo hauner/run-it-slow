@@ -55,8 +55,12 @@
   fprintf (stderr, "slow: argument missing for option %s!\n", arg);
 }
 
+- (void)tooManyArgs {
+  fprintf (stderr, "slow: too many arguments!\n");
+}
+
 - (void)usage {
-  printf ("usage: slow [-p cpu limit (0..100)] command\n");
+  printf ("usage: slow [-l cpu limit (1..100) in percent] \"command\"\n");
 }
 
 - (void)version {
@@ -76,12 +80,23 @@
       [self version];
       return NO;
     }
-    if (strcmp (argv[idx], "-p") == 0) {
+    else if (strcmp (argv[idx], "-l") == 0) {
       if (idx+1 < argc) {
         percent = [self parseNumber:argv[idx+1]];
+        idx++;
       }
       else {
         [self missingArg:argv[idx]];
+        return NO;
+      }
+    }
+    else {
+      if (idx+1 == argc) {
+        command = [NSString stringWithFormat:@"%s", argv[idx]];
+        return YES;
+      }
+      else {
+        [self tooManyArgs];
         return NO;
       }
     }
@@ -92,6 +107,10 @@
 
 - (int)percent {
   return percent;
+}
+
+- (NSString*)command {
+  return command;
 }
 
 @end

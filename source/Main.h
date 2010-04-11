@@ -21,25 +21,15 @@
  */
 
 // slow
-#import "TimerTick.h"
-//@class CpuWatcher;
-//@class Process;
-@class WhatDoIKnow;
 
 
-@interface CpuController : NSObject <TimerTick> {
-  WhatDoIKnow* wdik;
-  int          tick;
-  
-  //CpuWatcher* watcher;
-  //Process*    process;
+
+@interface Main : NSObject {
+  double    percent;
+  NSString* command;
 }
 
-+ (id)with:(WhatDoIKnow*)wdik;
-
-- (void)tick;
++ (id)withPercent:(double)percent Command:(NSString*)command;
+- (void)run;
 
 @end
-
-
-extern const int MAX_STEPS;

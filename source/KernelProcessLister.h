@@ -39,8 +39,8 @@ struct tinfo_proc;
   TimeSpan* _stamp;
 }
 
-- (void)allocate;
-- (void)release;
+- (void)createProcInfo;
+- (void)releaseProcInfo;
 
 - (NSArray*)get;
 - (TimeSpan*)timeStamp;

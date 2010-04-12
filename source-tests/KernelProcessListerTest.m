@@ -42,11 +42,11 @@
 
 - (void)setUp {
   processes = [KernelProcessLister new];
-  [processes allocate];
+  [processes createProcInfo];
 }
 
 - (void)tearDown {
-  [processes release];
+  [processes releaseProcInfo];
 }
 
 - (void)testShouldReturnNonEmptyProcessList {

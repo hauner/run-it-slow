@@ -59,8 +59,8 @@
   kernelProcessLister = [OCMockObject mockForClass:[KernelProcessLister class]];
   [[[kernelProcessLister stub] andReturn: sourceSamples] get];
   [[[kernelProcessLister stub] andReturn: timeStamp] timeStamp];
-  [[kernelProcessLister stub] allocate];
-  [[kernelProcessLister stub] release];
+  [[kernelProcessLister stub] createProcInfo];
+  [[kernelProcessLister stub] releaseProcInfo];
   
   expectedSamples = 
     [NSArray arrayWithObjects:

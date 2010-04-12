@@ -39,7 +39,7 @@
 
 -(NSArray*)samples {
   NSMutableArray* samples = [NSMutableArray arrayWithCapacity:100];
-  [lister allocate];
+  [lister createProcInfo];
 
   for (KernelProcess* kproc in [lister get]) {
     [samples addObject:
@@ -47,7 +47,7 @@
                     Cpu: [[kproc userTime] add:[kproc sysTime]]]];
   }
   
-  [lister release];
+  [lister releaseProcInfo];
   return samples;
 }
 

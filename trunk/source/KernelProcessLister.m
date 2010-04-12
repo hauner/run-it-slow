@@ -125,7 +125,7 @@ static int mibSize = 4;
   return self;  
 }
 
-- (void)allocate {
+- (void)createProcInfo {
   _stamp = [Clock now];
   [self createProcArray];
   [self initProcArray];
@@ -133,7 +133,7 @@ static int mibSize = 4;
   [self initTimeArray];
 }
 
-- (void)release {
+- (void)releaseProcInfo {
   free(_kinfo);
   free(_tinfo);
   [self reset];
